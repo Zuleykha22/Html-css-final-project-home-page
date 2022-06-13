@@ -1931,6 +1931,7 @@ body {
     height: 100%;
   }
   .blog .contain .blog-box .blog-text {
+    padding: 10px;
     position: relative;
     text-align: start;
   }
@@ -2754,63 +2755,54 @@ body {
   position: relative;
 }
 
-.review .contain .add-review .inputs input {
-  width: 600px;
+.review .contain .add-review .inputs .input-one {
+  position: relative;
+}
+
+.review .contain .add-review .inputs .input-one .input-name {
   height: 50px;
+  width: 100%;
   border: 1px solid #ebebeb;
   margin-bottom: 35px;
 }
 
-.review .contain .add-review .inputs input::-webkit-input-placeholder {
-  z-index: 5;
+.review .contain .add-review .inputs .input-one .input-name-text {
   position: absolute;
-  top: -25%;
-  left: 5%;
-  width: 30%;
-  height: 100%;
-  color: black;
+  width: 11%;
+  height: 14%;
+  top: -13%;
+  left: 3%;
+  z-index: 3;
   background-color: white;
-  display: inline-block;
+  padding-left: 11px;
+  font-weight: 500;
 }
 
-.review .contain .add-review .inputs input:-ms-input-placeholder {
-  z-index: 5;
-  position: absolute;
-  top: -25%;
-  left: 5%;
-  width: 30%;
-  height: 100%;
-  color: black;
-  background-color: white;
-  display: inline-block;
+.review .contain .add-review .inputs .input-two {
+  position: relative;
 }
 
-.review .contain .add-review .inputs input::-ms-input-placeholder {
-  z-index: 5;
-  position: absolute;
-  top: -25%;
-  left: 5%;
-  width: 30%;
-  height: 100%;
-  color: black;
-  background-color: white;
-  display: inline-block;
+.review .contain .add-review .inputs .input-two .input-email {
+  height: 50px;
+  width: 100%;
+  border: 1px solid #ebebeb;
+  margin-bottom: 35px;
 }
 
-.review .contain .add-review .inputs input::placeholder {
-  z-index: 5;
+.review .contain .add-review .inputs .input-two .input-email-text {
   position: absolute;
-  top: -25%;
-  left: 5%;
-  width: 30%;
-  height: 100%;
-  color: black;
+  width: 11%;
+  height: 14%;
+  top: -13%;
+  left: 3%;
+  z-index: 5;
   background-color: white;
-  display: inline-block;
+  padding-left: 11px;
+  font-weight: 500;
 }
 
 .review .contain .add-review .inputs .submit {
-  padding: 15px 260px;
+  padding: 15px 313px;
   text-decoration: none;
   color: white;
   background-color: black;
@@ -2831,49 +2823,22 @@ body {
 
 .review .contain .add-review .text-area textarea {
   height: 211px;
-  width: 600px;
+  width: 90%;
   border: 1px solid #ebebeb;
   margin-left: 40px;
 }
 
-.review .contain .add-review .text-area textarea::-webkit-input-placeholder {
+.review .contain .add-review .text-area .text-area-placeholder {
   z-index: 2;
   position: absolute;
-  top: -6%;
-  left: 5%;
-  width: 30%;
+  top: -5.5%;
+  left: 10%;
+  padding-left: 10px;
+  width: 18%;
   height: 100%;
   color: black;
-}
-
-.review .contain .add-review .text-area textarea:-ms-input-placeholder {
-  z-index: 2;
-  position: absolute;
-  top: -6%;
-  left: 5%;
-  width: 30%;
-  height: 100%;
-  color: black;
-}
-
-.review .contain .add-review .text-area textarea::-ms-input-placeholder {
-  z-index: 2;
-  position: absolute;
-  top: -6%;
-  left: 5%;
-  width: 30%;
-  height: 100%;
-  color: black;
-}
-
-.review .contain .add-review .text-area textarea::placeholder {
-  z-index: 2;
-  position: absolute;
-  top: -6%;
-  left: 5%;
-  width: 30%;
-  height: 100%;
-  color: black;
+  font-weight: 500;
+  background-color: white;
 }
 
 .review .contain .add-review .check-box {
