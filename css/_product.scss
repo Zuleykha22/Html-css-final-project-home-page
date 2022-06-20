@@ -594,7 +594,7 @@ body {
                     }
                 }
             }
-
+            
             .inputs {
                 position: relative;
                 .input-one{
@@ -1538,7 +1538,7 @@ body {
                             height: 1%;
                             top: 120%;
                             left: 0%;
-                            border: 1px solid black;
+                            border: 0.1 px solid black;
                         }
 
                         &:hover {
@@ -1650,32 +1650,54 @@ body {
                 }
 
                 .for-sequence {
-                    flex-direction: row-reverse;
+                    flex-direction: column-reverse;
 
                     .inputs {
                         position: relative;
-                        margin-bottom: 50px;
-
-                        input {
-                            width: 695px;
+                        .input-one{
+                            position: relative;
+                          .input-name {
                             height: 50px;
+                            width: 100%;
                             border: 1px solid #ebebeb;
-                            z-index: -2;
                             margin-bottom: 35px;
                         }
-
-                        input::placeholder {
-                            z-index: 2;
+                        .input-name-text{
                             position: absolute;
-                            top: -25%;
-                            left: 5%;
-                            width: 30%;
-                            height: 100%;
-                            color: black;
+                            width: 11%;
+                            height: 14%;
+                            top: -13%;
+                            left: 3%;
+                            z-index: 3;
+                            background-color: white;
+                            padding-left: 11px;
+                            font-weight: 500;
+                        }  
                         }
-
+                        .input-two{
+                            position: relative;
+                            .input-email {
+                            height: 50px;
+                            width: 100%;
+                            border: 1px solid #ebebeb;
+                            margin-bottom: 35px;
+                        }
+                        .input-email-text{
+                            position: absolute;
+                            width: 11%;
+                            height: 14%;
+                            top: -13%;
+                            left: 3%;
+                            z-index: 5;
+                            background-color: white;
+                            padding-left: 11px;
+                            font-weight: 500;
+                        }
+                        }
+                        
+        
                         .submit {
-                            padding: 15px 307px;
+                            padding: 15px 308px;
                             text-decoration: none;
                             color: white;
                             background-color: black;
@@ -1683,31 +1705,35 @@ body {
                             letter-spacing: 3px;
                             border-radius: 2px;
                             transition: 0.3s ease-in-out;
-
+        
                             &:hover {
                                 background-color: #2DBBF0;
                             }
                         }
                     }
-
                     .text-area {
+                        margin: 20px 0 35px 0;
                         position: relative;
-                        margin-left: -40px;
-
+        
                         textarea {
                             height: 211px;
-                            width: 694px;
+                            width: 100%;
                             border: 1px solid #ebebeb;
+                            margin-left: 0;
+                            // margin-bottom: 20px;
                         }
-
-                        textarea::placeholder {
+        
+                        .text-area-placeholder {
                             z-index: 2;
                             position: absolute;
-                            top: -6%;
-                            left: 5%;
-                            width: 30%;
-                            height: 100%;
+                            top: -5.5%;
+                            left: 3%;
+                            padding-left: 10px;
+                            width: 18%;
+                            height: 10%;
                             color: black;
+                            font-weight: 500;
+                            background-color: white;
                         }
                     }
                 }
@@ -1919,7 +1945,6 @@ body {
             .footer-logo {
                 text-align: center;
             }
-
             .footer-links {
                 text-align: center;
                 margin: 20px 0;
@@ -1937,7 +1962,6 @@ body {
                     }
                 }
             }
-
             .social-accounts {
                 text-align: center;
                 i {
